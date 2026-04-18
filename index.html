@@ -63,6 +63,9 @@
         .flex-split { display: flex; align-items: center; gap: 40px; }
         .flex-split > * { flex: 1; }
         
+        #plans img { cursor: pointer; transition: 0.3s; }
+        #plans img:hover { opacity: 0.8; transform: scale(1.02); }
+        
         .amenities-cards { background-color: var(--tan-bg); }
         .grid-2x2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
         .card { background: var(--white); padding: 15px; text-align: center; border-radius: 5px; }
@@ -281,7 +284,7 @@
             popup.addEventListener('click', (e) => { if (e.target === popup) popup.classList.remove('show'); });
 
             // Trigger popup on all CTA buttons
-            const triggerBtns = document.querySelectorAll('.btn, .btn-enquire, #overview td');
+            const triggerBtns = document.querySelectorAll('.btn, .btn-enquire, #overview td, #plans img');
             triggerBtns.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     // Skip if button is inside the popup itself or if it's a submit button in a form
@@ -304,7 +307,7 @@
             let currentIndex = 0;
 
             const updateGalleryImages = () => {
-                const galleryImgs = document.querySelectorAll('#gallery img, #plans img');
+                const galleryImgs = document.querySelectorAll('#gallery img');
                 galleryImages = Array.from(galleryImgs).map(img => img.src).filter(src => src && src.trim() !== "");
             };
 
@@ -321,7 +324,7 @@
             };
 
             document.addEventListener('click', (e) => {
-                const clickedImg = e.target.closest('#gallery img, #plans img');
+                const clickedImg = e.target.closest('#gallery img');
                 if (clickedImg) {
                     updateGalleryImages();
                     const src = clickedImg.src;
