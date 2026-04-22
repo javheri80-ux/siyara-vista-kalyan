@@ -20,6 +20,7 @@ function get_val($key, $fallback = '') {
 
     <!-- ================= UPDATED SEO META TAGS ================= -->
     <link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="16x16">
+    <meta name="google-site-verification" content="JSmmjfaE-agjL9jIe52uMktFUjgC0PRirgTukBejZrU" />
     <meta name="description"
         content="Discover Siyara Vista Kalyan by Shakti Group at Prem Auto Junction. Luxury 2 & 3 BHK homes with modern amenities and high-rise living in Kalyan West." />
     <meta name="keywords"
