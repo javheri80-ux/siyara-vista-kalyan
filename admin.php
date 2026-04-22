@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'phone_no', 'ov_title', 'ov_desc', 'p_2bhk_area', 'p_2bhk_price', 'p_3bhk_area', 'p_3bhk_price',
         'story_title', 'story_desc', 'peace_title', 'peace_desc', 'am_title', 'am_desc',
         'conn_title', 'conn_desc', 'comf_title', 'comf_desc', 'fp_title', 'fp_desc',
-        'gal_title', 'gal_desc', 'why_title', 'why_desc'
+        'gal_title', 'gal_desc', 'why_title', 'why_desc', 'google_map'
     ];
     
     foreach ($textFields as $field) {
@@ -148,6 +148,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="grid">
                 <div class="full"><label>Section Title:</label><input type="text" name="why_title" value="<?= htmlspecialchars($data['why_title']) ?>"></div>
                 <div class="full"><label>Section Text (Paragraphs):</label><textarea name="why_desc" rows="5"><?= htmlspecialchars($data['why_desc']) ?></textarea></div>
+                <div class="full"><label>Google Map Embed URL (Paste only the 'src' link from the iframe code):</label><input type="text" name="google_map" value="<?= htmlspecialchars($data['google_map']) ?>"></div>
             </div>
         </div>
 
