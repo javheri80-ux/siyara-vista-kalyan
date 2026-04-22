@@ -1,77 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.deltathane.online/</loc>
-  <lastmod>2026-04-18T06:51:05+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/index.html</loc>
-  <lastmod>2026-04-18T06:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/index.html</loc>
-  <lastmod>2026-04-18T06:51:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/1bhk-flats-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/2bhk-flats-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/1bhk-for-sale-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/2bhk-for-sale-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/new-projects-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/affordable-flats-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/ready-to-move-flats-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/under-construction-flats-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/budget-homes-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.deltathane.online/blog/residential-projects-in-thane.html</loc>
-  <lastmod>2026-04-18T06:51:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://siyaravistakalyan.site/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://siyaravistakalyan.site/privacy-policy.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://siyaravistakalyan.site/terms-and-conditions.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://siyaravistakalyan.site/disclaimer.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://siyaravistakalyan.site/blog/index.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://siyaravistakalyan.site/blog/luxury-living-siyara-vista-kalyan.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://siyaravistakalyan.site/blog/investment-benefits-siyara-vista-kalyan.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://siyaravistakalyan.site/blog/amenities-guide-siyara-vista-kalyan.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://siyaravistakalyan.site/blog/connectivity-guide-siyara-vista-kalyan.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.85</priority>
+  </url>
 </urlset>
