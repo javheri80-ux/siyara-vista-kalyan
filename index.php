@@ -1147,26 +1147,22 @@ function get_val($key, $fallback = '') {
                     source: window.location.hostname
                 });
 
-                fetch(GOOGLE_SCRIPT_URL + "?" + params.toString())
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.status === 'success') {
-                            alert("✅ Thank you! Your enquiry for Siyara Vista Kalyan has been received. We will contact you shortly.");
-                            form.reset();
-                            const popup = document.getElementById('auto-popup');
-                            if (popup) popup.classList.remove('show');
-                        } else {
-                            alert("Something went wrong. Please try again.");
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        alert("Submission failed. Please check your connection.");
-                    })
-                    .finally(() => {
-                        submitBtn.disabled = false;
-                        submitBtn.innerText = originalBtnText;
-                    });
+                // 1. Send to Google Sheets (background)
+                fetch(GOOGLE_SCRIPT_URL + "?" + params.toString()).catch(err => console.error("Google Sheets Error:", err));
+
+                // 2. Send to contact.php for email forwarding & gotya.txt local log, then redirect to thank-you.html
+                fetch("contact.php", {
+                    method: "POST",
+                    body: new FormData(form)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.href = "thank-you.html";
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    window.location.href = "thank-you.html";
+                });
             };
 
             const forms = document.querySelectorAll('form');
