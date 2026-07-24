@@ -1,6 +1,6 @@
 <?php
 /**
- * Lead Handler for Delta Greenville
+ * Lead Handler for SIYARA VISTA KALYAN WEST
  * Saves leads to gotya.txt and sends mail
  */
 
@@ -21,9 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 3. Send Mail (Optional/Backup)
     $to = "javheri80@gmail.com";
-    $subject = "New Lead: Delta Greenville";
+    $subject = "New Lead: SIYARA VISTA KALYAN WEST";
     $message = "New lead received:\nName: $name\nPhone: $phone\nEmail: $email\nConfig: $config\nDate: $date";
-    $headers = "From: leads@deltathane.com";
+    $headers = "From: leads@siyaravistakalyan.site";
     @mail($to, $subject, $message, $headers);
 
     // 4. Return JSON Response
