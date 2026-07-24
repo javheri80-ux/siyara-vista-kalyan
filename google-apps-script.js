@@ -72,6 +72,23 @@ function doGet(e) {
       sheet.getRange(lastRow, 1, 1, 7).setBackground("#f0f7f4");
     }
 
+    // Email Notification forwarding directly to javheri80@gmail.com
+    try {
+      const recipient = "javheri80@gmail.com";
+      const emailSubject = "New Lead: " + (data.project_name || "SIYARA VISTA KALYAN WEST");
+      const emailBody = "Hello,\n\nA new lead has been received from your website:\n\n" +
+                        "Project: " + (data.project_name || "SIYARA VISTA KALYAN WEST") + "\n" +
+                        "Name: " + (data.name || "N/A") + "\n" +
+                        "Phone: " + (data.phone || "N/A") + "\n" +
+                        "Email: " + (data.email || "N/A") + "\n" +
+                        "Configuration: " + (data.config || "N/A") + "\n" +
+                        "Source/Domain: " + (data.source || "Website") + "\n\n" +
+                        "This email was sent automatically from your Google Apps Script.";
+      MailApp.sendEmail(recipient, emailSubject, emailBody);
+    } catch(mailErr) {
+      Logger.log("Mail Error: " + mailErr.toString());
+    }
+
     // Return success — CORS friendly
     return ContentService
       .createTextOutput(JSON.stringify({ status: "success", message: "Lead saved!" }))
